@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="w-11/12 mx-auto">
+    <nav class=" flex gap-2 justify-center my-6">
+        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+        <button onclick="handleSearch()" class="btn">Search</button>
+    </nav>
+    <main>
+       <div class="flex justify-center">
+        <span id="spinner" class="loading items-center hidden loading-spinner loading-lg"></span>
+       </div>
+    </main>
+    <footer>
+        <footer class="footer bg-neutral text-neutral-content p-10">
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
