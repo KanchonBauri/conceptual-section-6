@@ -12,38 +12,61 @@
 </head>
 
 <body class="w-11/12 mx-auto">
-    <nav class=" flex gap-2 justify-center my-6">
-        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-        <button onclick="handleSearch()" class="btn">Search</button>
-    </nav>
+    <header>
+        <nav class=" text-center gap-2 mt-6">
+            <input id="search-box" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            <button onclick="handleSearch()" class="btn">Search</button>
+        </nav>
+
+    </header>
     <main>
-       <div class="flex justify-center">
-        <span id="spinner" class="loading items-center hidden loading-spinner loading-lg"></span>
-       </div>
+        <div id="lostData" class="flex justify-center my-5">
+
+        </div>
+
+        <div id="phones-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+
+        </div>
+        <div id="phoneDetails" class="">
+
+        </div>
+        <div class="flex justify-center">
+            <span id="spinner" class="loading items-center loading-spinner loading-lg"></span>
+        </div>
+
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+        <div id="modal">
+
+        </div>
+
+        <div class="text-center">
+            <button id="show-all-btn" onclick="handleShowAll()" class="btn bg-red-500 my-5">Show All</button>
+        </div>
     </main>
     <footer>
         <footer class="footer bg-neutral text-neutral-content p-10">
             <nav>
-              <h6 class="footer-title">Services</h6>
-              <a class="link link-hover">Branding</a>
-              <a class="link link-hover">Design</a>
-              <a class="link link-hover">Marketing</a>
-              <a class="link link-hover">Advertisement</a>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
             </nav>
             <nav>
-              <h6 class="footer-title">Company</h6>
-              <a class="link link-hover">About us</a>
-              <a class="link link-hover">Contact</a>
-              <a class="link link-hover">Jobs</a>
-              <a class="link link-hover">Press kit</a>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
             </nav>
             <nav>
-              <h6 class="footer-title">Legal</h6>
-              <a class="link link-hover">Terms of use</a>
-              <a class="link link-hover">Privacy policy</a>
-              <a class="link link-hover">Cookie policy</a>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
             </nav>
-          </footer>
+        </footer>
     </footer>
     <script src="./js/index.js"></script>
 </body>
